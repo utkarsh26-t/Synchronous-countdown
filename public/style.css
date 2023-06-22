@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    margin: 2rem;
+    color: #89CFF0;
+    text-transform:uppercase;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    background-color: #F0F8FF;
+    padding: 3rem;
+    border-radius: 2rem;
+    color: #89CFF0;
+}
+
+#timer-input{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+    justify-content: space-evenly;
+}
+
+input{
+    width: 5rem;
+    text-align: center;
+    border: 0.5px solid #89CFF0;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    flex-grow: 1;
+}
+
+#timer{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+
+
+#controls{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: #89CFF0;
+    color: #F0F8FF;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    flex-grow: 1;
+    margin: 0.75rem;
+} 
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (width <= 776px){
+    #timer-input{
+        font-size: 1rem;
+    }
+    #timer{
+        font-size: 2.5rem;
+    }
+} 
+
+@media screen and (width <= 549px){
+    #controls{
+        flex-direction: column;
+    }
+    #timer{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (width <=516px) {
+    #timer-input{
+        flex-direction: column;
+    }
+    #timer-input input{
+        display: block;
+        width: 100%;
+    }
+} 
+
+@media screen and (width <=476px) {
+    #timer{
+        font-size: 1.25rem;
+    }
+    #controls{
+        width: 100%;
+    }
+}

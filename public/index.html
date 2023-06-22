@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <!-- Socket -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- jQuery -->
+    <script src="jQuery.js"></script>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">Set Timer or See Status</h1>
+
+    <div class="container">
+        <form id="timer-input">
+            <div>
+                <label for="hours">Hours: </label>
+                <input type="number" id="hours" placeholder="--HH--" min="0"></input>
+            </div>
+            <div>
+                <label for="minutes">Minutes: </label>
+                <input type="number" id="minutes" placeholder="--MM--" min="0" max="59"></input>
+            </div>
+            <div>
+                <label for="seconds">Seconds: </label>
+                <input type="number" id="seconds" placeholder="--SS--" min="0" max="59"></input>
+            </div>
+        </form>
+
+        <div id="timer">
+            <span id="timer-hrs">00:</span>
+            <span id="timer-mins">00:</span>
+            <span id="timer-sec">00</span>
+        </div>
+
+        <div id="controls">
+            <button id="set-timer">Set</button>
+            <button id="reset-timer">Reset</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
