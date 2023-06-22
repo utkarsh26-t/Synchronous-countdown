@@ -10,6 +10,11 @@ $("#set-timer").click(() => {
         mins:mins,
         sec:sec
     })
+
+    $("#hours").val("");
+    $("#minutes").val("");
+    $("#seconds").val("");
+
 });
 
 socket.on("current-timer", (data) => {
