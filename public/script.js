@@ -34,7 +34,7 @@ socket.on("current-timer", (data) => {
 })
 
 $("#reset-timer").click(() => {
-    socket.emit("stop-timer",{});
+    socket.emit("reset-timer",{});
 })
 
 

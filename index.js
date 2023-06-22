@@ -52,9 +52,9 @@ io.on("connection", (socket) => {
     
   });
 
-  //when user sends request (for stopping timer) of event type: stop-timer
+  //when user sends request (for resetting timer) of event type: reset-timer
   //Then setting timer to zero(0)
-  socket.on("stop-timer", (data) => {
+  socket.on("reset-timer", (data) => {
     timer = 0;
   })
   
