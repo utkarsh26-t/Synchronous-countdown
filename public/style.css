@@ -30,8 +30,13 @@
     justify-content: space-evenly;
 }
 
+#timer-input div{
+    flex-basis: 30%;
+}
+
+
 input{
-    width: 5rem;
+    width: 100%;
     text-align: center;
     border: 0.5px solid #89CFF0;
     padding: 0.25rem;
@@ -52,7 +57,7 @@ input:focus{
 
 
 #controls{
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -65,8 +70,10 @@ button{
     cursor: pointer;
     border: none;
     padding: 0.5rem 0.75rem;
-    flex-grow: 1;
-    margin: 0.75rem;
+    /* flex-grow: 1; */
+    /* margin: 0.75rem; */
+    flex-basis: 45%;
+    margin-bottom: 0.5rem;
 } 
 
 button:hover{
@@ -79,7 +86,11 @@ button:hover{
         font-size: 1rem;
     }
     #timer{
-        font-size: 2.5rem;
+        font-size: 4rem;
+    }
+
+    .container{
+        width: 80%;
     }
 } 
 
@@ -88,7 +99,7 @@ button:hover{
         flex-direction: column;
     }
     #timer{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
@@ -104,7 +115,7 @@ button:hover{
 
 @media screen and (width <=476px) {
     #timer{
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
     #controls{
         width: 100%;
